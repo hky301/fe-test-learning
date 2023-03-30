@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vitest",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vitest/ui": "^0.29.8",
+    "vite": "^4.2.1",
     "vitest": "^0.29.7"
   }
 }
